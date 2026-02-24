@@ -435,7 +435,7 @@ def build_pdf_report() -> bytes:
                 safe_latin1(f"#{rec['rank']} {rec['product_name']} (Score: {rec['score']})"),
                 new_x="LMARGIN", new_y="NEXT",
             )
-            pdf.body_text(rec.get("reasoning_de", ""))
+            pdf.body_text(rec.get("reasoning", ""))
 
     nfc = st.session_state.get("nfc_config")
     if nfc:
@@ -893,7 +893,7 @@ def _display_search_results(data: dict):
                 st.metric(f"#{rec['rank']}", f"{score:.0%}")
             with cols[1]:
                 st.markdown(f"**{rec['product_name']}**")
-                st.markdown(rec.get("reasoning_de", ""))
+                st.markdown(rec.get("reasoning", ""))
                 if rec.get("caveats"):
                     for c in rec["caveats"]:
                         st.caption(f"Warning: {c}")
@@ -1264,7 +1264,7 @@ def render_tab_evaluation():
             "JSON validity",
             "Latency",
             "Cost/1K tokens",
-            "Language quality",
+            "Text quality",
             "Structure adherence",
         ],
         "Claude Sonnet 4.6": [
@@ -1272,7 +1272,7 @@ def render_tab_evaluation():
             "Valid" if claude_r["json_valid"] else "Invalid",
             f"{claude_r['latency_ms']}ms",
             f"~${claude_r['cost_per_1k_tokens']}",
-            claude_r["german_quality"],
+            claude_r["text_quality"],
             claude_r["structure_adherence"],
         ],
         "Llama-3.3-70B (Groq)": [
@@ -1280,7 +1280,7 @@ def render_tab_evaluation():
             ("Needed correction" if llama_r["json_needed_correction"] else "Valid"),
             f"{llama_r['latency_ms']}ms",
             f"~${llama_r['cost_per_1k_tokens']}",
-            llama_r["german_quality"],
+            llama_r["text_quality"],
             llama_r["structure_adherence"],
         ],
     }

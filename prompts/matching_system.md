@@ -17,7 +17,7 @@ Respond as JSON:
       "product_id": "...",
       "product_name": "...",
       "score": 0.92,
-      "reasoning_de": "Reasoning in the user's language, 2-3 sentences",
+      "reasoning": "Reasoning in 2-3 sentences",
       "meets_all_requirements": true,
       "caveats": ["Any limitations"]
     }

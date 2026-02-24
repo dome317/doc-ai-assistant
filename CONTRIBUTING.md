@@ -5,7 +5,7 @@ Thanks for your interest in contributing to DocAI Assistant!
 ## Getting Started
 
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/doc-ai-assistant.git`
+2. Clone your fork: `git clone https://github.com/dome317/doc-ai-assistant.git`
 3. Install dependencies: `pip install -r requirements.txt`
 4. Run the app: `streamlit run app.py`
 5. Run tests: `pytest tests/ -v`

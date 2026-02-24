@@ -80,7 +80,7 @@ class TestProductCatalog:
                 assert p["specs"].get("nfc_configurable") is True, f"{p['id']} should be NFC-configurable"
 
     def test_ex_product_has_rating(self, catalog):
-        ex_products = [p for p in catalog["products"] if "ex" in p["category"].lower() or "ex" in p["id"].lower()]
+        ex_products = [p for p in catalog["products"] if "explosion" in p["category"].lower()]
         assert len(ex_products) >= 1
         for p in ex_products:
             assert p["specs"].get("ex_rating") is not None, f"{p['id']} missing ex_rating"
@@ -190,7 +190,8 @@ class TestDemoSearch:
 
     def test_reasoning_not_empty(self, demo_search):
         for rec in demo_search["recommendations"]:
-            assert len(rec.get("reasoning_de", "")) > 10, f"Rank {rec['rank']} missing reasoning"
+            reasoning = rec.get("reasoning", "") or rec.get("reasoning_de", "")
+            assert len(reasoning) > 10, f"Rank {rec['rank']} missing reasoning"
 
 
 # ---------------------------------------------------------------------------
@@ -394,7 +395,7 @@ class TestPDFReportContent:
         }
         st.session_state["search_results"] = {
             "recommendations": [
-                {"rank": 1, "product_name": "ELS NFC VOC", "score": 0.94, "reasoning_de": "Test"}
+                {"rank": 1, "product_name": "ELS NFC VOC", "score": 0.94, "reasoning": "Test"}
             ]
         }
         st.session_state["nfc_config"] = {"device": {"model": "ELS NFC"}}

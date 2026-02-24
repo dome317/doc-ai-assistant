@@ -8,7 +8,7 @@
     "fields_total": 14,
     "json_valid": true,
     "json_needed_correction": false,
-    "german_quality": "Very good",
+    "text_quality": "Very good",
     "structure_adherence": "Exact",
     "extraction": {
       "products": [
@@ -43,7 +43,7 @@
     "fields_total": 14,
     "json_valid": false,
     "json_needed_correction": true,
-    "german_quality": "Good",
+    "text_quality": "Good",
     "structure_adherence": "Minor deviations",
     "extraction": {
       "products": [

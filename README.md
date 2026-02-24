@@ -55,7 +55,7 @@ See [docs/architecture.md](docs/architecture.md) for detailed model selection ra
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/doc-ai-assistant.git
+git clone https://github.com/dome317/doc-ai-assistant.git
 cd doc-ai-assistant
 pip install -r requirements.txt
 ```
