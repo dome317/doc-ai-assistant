@@ -1,0 +1,51 @@
+{
+  "query": "Quiet ventilator for 25m2 office with air quality sensor",
+  "recommendations": [
+    {
+      "rank": 1,
+      "product_id": "ELS-NFC-VOC",
+      "product_name": "ELS NFC VOC",
+      "score": 0.94,
+      "reasoning_de": "The ELS NFC VOC is ideal for a 25m2 office. The integrated VOC sensor continuously measures air quality and automatically adjusts the ventilation level. At only 26 dB(A) on the lowest setting it is extremely quiet. NFC configuration allows easy threshold adjustment.",
+      "meets_all_requirements": true,
+      "caveats": []
+    },
+    {
+      "rank": 2,
+      "product_id": "ELS-NFC-CO2",
+      "product_name": "ELS NFC CO2",
+      "score": 0.88,
+      "reasoning_de": "The ELS NFC CO2 offers CO2-based demand ventilation, particularly useful for offices with multiple occupants. Noise levels are identical to the VOC variant. CO2 measurement is especially relevant for meeting rooms with varying occupancy.",
+      "meets_all_requirements": true,
+      "caveats": ["CO2 sensor instead of VOC — measures breathing air quality directly, not volatile organic compounds"]
+    },
+    {
+      "rank": 3,
+      "product_id": "ELS-NFC",
+      "product_name": "ELS NFC",
+      "score": 0.72,
+      "reasoning_de": "The base ELS NFC offers the same quiet performance and NFC configuration, but without an integrated air quality sensor. For an office with low occupancy, manual stage control may be sufficient.",
+      "meets_all_requirements": false,
+      "caveats": ["No integrated air quality sensor — manual control required"]
+    },
+    {
+      "rank": 4,
+      "product_id": "AIRPAL",
+      "product_name": "AirPal Air Purifier",
+      "score": 0.55,
+      "reasoning_de": "The AirPal is a standalone air purifier with HEPA filtration that requires no installation. It cleans the air but does not replace controlled supply and extract ventilation. Useful as a supplement to the ELS NFC VOC.",
+      "meets_all_requirements": false,
+      "caveats": ["Not a ventilation system — air purification only", "Not a built-in ventilator"]
+    },
+    {
+      "rank": 5,
+      "product_id": "KWL-EC-70",
+      "product_name": "KWL EC 70",
+      "score": 0.48,
+      "reasoning_de": "The KWL EC 70 offers heat recovery and is suitable for small units. However, for a single office it is oversized and installation is more complex than an ELS insert.",
+      "meets_all_requirements": false,
+      "caveats": ["Oversized for a single office", "Higher installation effort"]
+    }
+  ],
+  "general_note": "For a 25m2 office with air quality requirements, the ELS NFC series with sensor variant is the optimal choice. The VOC sensor responds to general air quality degradation, the CO2 sensor specifically to occupancy."
+}

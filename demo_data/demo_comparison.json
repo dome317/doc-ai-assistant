@@ -1,0 +1,79 @@
+{
+  "input_text": "Technical Datasheet ELS NFC VOC — HVAC Ventilation Equipment\n\nMultifunctional ventilator insert with VOC sensor and NFC configuration.\nArticle No.: 40764\nAirflow: 7.5 – 100 m\u00b3/h in 14 stages\nFactory settings: Stage 1: 35 m\u00b3/h, Stage 2: 60 m\u00b3/h, Stage 3: 100 m\u00b3/h\nSound pressure level (3m, DIN EN ISO 10140): Stage 1: 26 dB(A), Stage 2: 35 dB(A), Stage 3: 47 dB(A)\nProtection class: IPX5\nSafety class: II\nRated voltage: 230V AC, 50/60 Hz\nVOC sensor: Threshold 100-450 VOC, Modes: Comfort/Intensive\nFilter class: Coarse 50%\nConnection: DN 100\nMounting: Tool-free slide-in mounting",
+  "claude_result": {
+    "model": "Claude Sonnet 4",
+    "latency_ms": 2100,
+    "cost_per_1k_tokens": 0.003,
+    "fields_extracted": 12,
+    "fields_total": 14,
+    "json_valid": true,
+    "json_needed_correction": false,
+    "german_quality": "Very good",
+    "structure_adherence": "Exact",
+    "extraction": {
+      "products": [
+        {
+          "product_name": "ELS NFC VOC",
+          "airflow_m3h": 100,
+          "pressure_pa": null,
+          "sound_level_dba": 47,
+          "sound_power_dba": null,
+          "power_consumption_w": null,
+          "protection_class": "IPX5",
+          "safety_class": "II",
+          "mounting_type": "Tool-free slide-in mounting",
+          "diameter_mm": 100,
+          "voltage": "230V AC, 50/60 Hz",
+          "wrg_efficiency_pct": null,
+          "ex_rating": null,
+          "filter_class": "Coarse 50%",
+          "nfc_configurable": true,
+          "article_number": "40764"
+        }
+      ],
+      "document_type": "datasheet",
+      "confidence": 0.92
+    }
+  },
+  "llama_result": {
+    "model": "Llama-3.3-70B (via Groq)",
+    "latency_ms": 800,
+    "cost_per_1k_tokens": 0.0006,
+    "fields_extracted": 9,
+    "fields_total": 14,
+    "json_valid": false,
+    "json_needed_correction": true,
+    "german_quality": "Good",
+    "structure_adherence": "Minor deviations",
+    "extraction": {
+      "products": [
+        {
+          "product_name": "ELS NFC VOC",
+          "airflow_m3h": "7.5-100",
+          "sound_level_dba": "26-47",
+          "power_consumption_w": null,
+          "protection_class": "IPX5",
+          "safety_class": "II",
+          "voltage": "230V AC",
+          "diameter_mm": 100,
+          "article_number": "40764"
+        }
+      ],
+      "document_type": "datasheet",
+      "confidence": 0.78
+    },
+    "issues": [
+      "airflow_m3h as string instead of number",
+      "sound_level_dba as range string instead of max value",
+      "Fewer fields extracted",
+      "JSON contained Markdown wrapper (```json)"
+    ]
+  },
+  "comparison_summary": {
+    "winner_accuracy": "Claude Sonnet",
+    "winner_speed": "Llama-3.3-70B",
+    "winner_cost": "Llama-3.3-70B",
+    "recommendation": "Claude Sonnet for production-critical extraction (higher reliability, better structure adherence). Llama-3.3-70B for fast pre-classification or non-critical batch processing at high volume.",
+    "key_insight": "The quality difference is especially significant with technical terminology and strict JSON schema compliance. For production use cases, reliability matters more than speed."
+  }
+}

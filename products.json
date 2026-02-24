@@ -1,0 +1,319 @@
+{
+  "catalog_version": "2026-02-demo",
+  "source": "Example HVAC product catalog for demonstration purposes",
+  "disclaimer": "Demo dataset — not guaranteed to be complete or up-to-date",
+  "products": [
+    {
+      "id": "ELS-NFC",
+      "name": "ELS NFC",
+      "article_number": "40761",
+      "category": "Single-Duct Ventilation System",
+      "description": "Multifunctional ventilator insert with NFC configuration via app. 3+2 airflow stages, ultraSilence technology.",
+      "specs": {
+        "airflow_m3h": [7.5, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100],
+        "airflow_factory_m3h": [35, 60, 100],
+        "sound_pressure_dba": {"low": 26, "mid": 35, "high": 47},
+        "sound_power_dba": {"low": 30, "mid": 39, "high": 51},
+        "power_consumption_w": {"low": 4, "mid": 6, "high": 15},
+        "protection_class": "IPX5",
+        "safety_class": "II",
+        "voltage": "230V AC, 50/60 Hz",
+        "mounting_type": "Slide-in mounting",
+        "diameter_mm": 100,
+        "filter_class": "Coarse 50%",
+        "max_temp_c": 40,
+        "nfc_configurable": true,
+        "sensor": null,
+        "wrg_efficiency_pct": null,
+        "ex_rating": null
+      },
+      "use_cases": ["Bathroom", "WC", "Storage Room", "Hotel", "Dormitory"],
+      "highlights": ["NFC configuration without power", "ultraSilence", "Tool-free slide-in mounting"]
+    },
+    {
+      "id": "ELS-NFC-F",
+      "name": "ELS NFC F",
+      "article_number": "40762",
+      "category": "Single-Duct Ventilation System",
+      "description": "ELS NFC with integrated humidity sensor and stepless humidity-controlled operation.",
+      "specs": {
+        "airflow_m3h": [7.5, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100],
+        "airflow_factory_m3h": [35, 60, 100],
+        "sound_pressure_dba": {"low": 26, "mid": 35, "high": 47},
+        "sound_power_dba": {"low": 30, "mid": 39, "high": 51},
+        "power_consumption_w": {"low": 4, "mid": 6, "high": 15},
+        "protection_class": "IPX5",
+        "safety_class": "II",
+        "voltage": "230V AC, 50/60 Hz",
+        "mounting_type": "Slide-in mounting",
+        "diameter_mm": 100,
+        "filter_class": "Coarse 50%",
+        "max_temp_c": 40,
+        "nfc_configurable": true,
+        "sensor": "Humidity (rH%)",
+        "wrg_efficiency_pct": null,
+        "ex_rating": null
+      },
+      "use_cases": ["Bathroom with shower", "Wet rooms", "Laundry room"],
+      "highlights": ["Humidity-controlled operation", "NFC configuration", "ultraSilence"]
+    },
+    {
+      "id": "ELS-NFC-VOC",
+      "name": "ELS NFC VOC",
+      "article_number": "40764",
+      "category": "Single-Duct Ventilation System",
+      "description": "ELS NFC with integrated VOC sensor. Selectable Comfort and Intensive modes. Threshold 100-450 VOC configurable.",
+      "specs": {
+        "airflow_m3h": [7.5, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100],
+        "airflow_factory_m3h": [35, 60, 100],
+        "sound_pressure_dba": {"low": 26, "mid": 35, "high": 47},
+        "sound_power_dba": {"low": 30, "mid": 39, "high": 51},
+        "power_consumption_w": {"low": 4, "mid": 6, "high": 15},
+        "protection_class": "IPX5",
+        "safety_class": "II",
+        "voltage": "230V AC, 50/60 Hz",
+        "mounting_type": "Slide-in mounting",
+        "diameter_mm": 100,
+        "filter_class": "Coarse 50%",
+        "max_temp_c": 40,
+        "nfc_configurable": true,
+        "sensor": "VOC (100-450, Modes: Comfort/Intensive)",
+        "wrg_efficiency_pct": null,
+        "ex_rating": null
+      },
+      "use_cases": ["Office", "Meeting rooms", "Medical practice", "Classroom"],
+      "highlights": ["VOC air quality sensor", "Comfort/Intensive modes", "NFC configuration"]
+    },
+    {
+      "id": "ELS-NFC-CO2",
+      "name": "ELS NFC CO2",
+      "article_number": "40765",
+      "category": "Single-Duct Ventilation System",
+      "description": "ELS NFC with integrated CO2 sensor for demand-controlled ventilation.",
+      "specs": {
+        "airflow_m3h": [7.5, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100],
+        "airflow_factory_m3h": [35, 60, 100],
+        "sound_pressure_dba": {"low": 26, "mid": 35, "high": 47},
+        "power_consumption_w": {"low": 4, "mid": 6, "high": 15},
+        "protection_class": "IPX5",
+        "voltage": "230V AC, 50/60 Hz",
+        "mounting_type": "Slide-in mounting",
+        "diameter_mm": 100,
+        "nfc_configurable": true,
+        "sensor": "CO2 (ppm)",
+        "wrg_efficiency_pct": null,
+        "ex_rating": null
+      },
+      "use_cases": ["Classroom", "Office", "Meeting rooms", "Medical practice"],
+      "highlights": ["CO2 control", "Demand-controlled ventilation", "NFC configuration"]
+    },
+    {
+      "id": "ELS-NFC-P",
+      "name": "ELS NFC P",
+      "article_number": "40763",
+      "category": "Single-Duct Ventilation System",
+      "description": "ELS NFC with presence detector. Activates automatically on room entry.",
+      "specs": {
+        "airflow_m3h": [7.5, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100],
+        "airflow_factory_m3h": [35, 60, 100],
+        "sound_pressure_dba": {"low": 26, "mid": 35, "high": 47},
+        "power_consumption_w": {"low": 4, "mid": 6, "high": 15},
+        "protection_class": "IPX5",
+        "voltage": "230V AC, 50/60 Hz",
+        "mounting_type": "Slide-in mounting",
+        "diameter_mm": 100,
+        "nfc_configurable": true,
+        "sensor": "Presence (PIR)",
+        "wrg_efficiency_pct": null,
+        "ex_rating": null
+      },
+      "use_cases": ["WC", "Guest WC", "Common areas"],
+      "highlights": ["Automatic presence detection", "NFC configuration"]
+    },
+    {
+      "id": "MINIVENT-M1-100",
+      "name": "MiniVent M1/100",
+      "article_number": null,
+      "category": "Small Room Ventilator",
+      "description": "Compact design small-room ventilator with high pressure performance and quiet operation. Also available in black.",
+      "specs": {
+        "airflow_m3h": 100,
+        "sound_pressure_dba": null,
+        "power_consumption_w": null,
+        "protection_class": null,
+        "voltage": "230V AC",
+        "mounting_type": "Wall/Ceiling",
+        "diameter_mm": 100,
+        "nfc_configurable": false,
+        "sensor": null,
+        "wrg_efficiency_pct": null,
+        "ex_rating": null
+      },
+      "use_cases": ["Bathroom", "WC", "Small rooms"],
+      "highlights": ["Premium design", "Also available in black", "Compact"]
+    },
+    {
+      "id": "KWL-EC-70",
+      "name": "KWL EC 70",
+      "article_number": null,
+      "category": "Decentralized Ventilation Unit with HRV",
+      "description": "Compact decentralized ventilation unit with heat recovery. Optional second-room connection for small living units.",
+      "specs": {
+        "airflow_m3h": 70,
+        "sound_pressure_dba": null,
+        "power_consumption_w": null,
+        "protection_class": null,
+        "voltage": "230V AC",
+        "mounting_type": "Surface mount / partially wall-integrated",
+        "diameter_mm": null,
+        "nfc_configurable": false,
+        "sensor": null,
+        "wrg_efficiency_pct": null,
+        "ex_rating": null
+      },
+      "use_cases": ["Student apartment", "Senior apartment", "Studio apartment", "Small living units"],
+      "highlights": ["Second-room connection", "Decentralized + centralized use", "Heat recovery"]
+    },
+    {
+      "id": "KWL-ECOVENT-VERSO",
+      "name": "KWL EcoVent Verso",
+      "article_number": null,
+      "category": "Decentralized Ventilation Unit with HRV",
+      "description": "Decentralized ventilation unit with heat recovery, also suitable for pitched roofs with knee wall installation kits.",
+      "specs": {
+        "airflow_m3h": null,
+        "wrg_efficiency_pct": null,
+        "nfc_configurable": false,
+        "sensor": null,
+        "ex_rating": null
+      },
+      "use_cases": ["Attic", "Pitched roof", "Living space"],
+      "highlights": ["Pitched roof installation possible", "Knee wall mounting", "HRV"]
+    },
+    {
+      "id": "AIR1-COMPACT",
+      "name": "AIR1 Compact Unit",
+      "article_number": null,
+      "category": "Compact Unit with HRV",
+      "description": "Compact ventilation unit with heat recovery for residential and commercial buildings. Extended with space-saving XVP series.",
+      "specs": {
+        "airflow_m3h": null,
+        "wrg_efficiency_pct": null,
+        "nfc_configurable": false,
+        "mounting_type": "Central",
+        "sensor": null,
+        "ex_rating": null
+      },
+      "use_cases": ["Residential buildings", "Commercial buildings", "Office"],
+      "highlights": ["New XVP series especially space-saving", "easyControls 3.0", "Central HRV"]
+    },
+    {
+      "id": "KWL-YOGA",
+      "name": "KWL Yoga",
+      "article_number": null,
+      "category": "Decentralized Ventilation Unit with HRV",
+      "description": "Decentralized ventilation unit for fast installation in schools and commercial units. Now also with enthalpy heat exchanger.",
+      "specs": {
+        "airflow_m3h": null,
+        "wrg_efficiency_pct": null,
+        "nfc_configurable": false,
+        "sensor": null,
+        "ex_rating": null
+      },
+      "use_cases": ["School", "Commercial", "Retrofit"],
+      "highlights": ["Fast installation", "Enthalpy heat exchanger available", "Ideal for retrofit"]
+    },
+    {
+      "id": "IVRW-EC-225",
+      "name": "IVRW EC 225",
+      "article_number": null,
+      "category": "Impulse Ventilator",
+      "description": "Impulse ventilator for garages and industrial applications. Extremely flat height of only 150mm for low ceilings.",
+      "specs": {
+        "airflow_m3h": null,
+        "sound_pressure_dba": null,
+        "power_consumption_w": null,
+        "protection_class": null,
+        "voltage": null,
+        "mounting_type": "Ceiling mount",
+        "height_mm": 150,
+        "nfc_configurable": false,
+        "sensor": null,
+        "wrg_efficiency_pct": null,
+        "ex_rating": null
+      },
+      "use_cases": ["Underground parking", "Parking garage", "Industrial hall low ceiling"],
+      "highlights": ["Only 150mm height", "EC motor", "Supply and extract"]
+    },
+    {
+      "id": "DVEC",
+      "name": "DVEC Roof Ventilator",
+      "article_number": null,
+      "category": "Roof Ventilator",
+      "description": "EC roof ventilator for controlled residential ventilation. Central extraction via roof.",
+      "specs": {
+        "airflow_m3h": null,
+        "power_consumption_w": null,
+        "mounting_type": "Roof mount",
+        "nfc_configurable": false,
+        "sensor": null,
+        "wrg_efficiency_pct": null,
+        "ex_rating": null
+      },
+      "use_cases": ["Multi-family house", "Central extraction", "Residential ventilation"],
+      "highlights": ["EC motor energy-efficient", "Central roof extraction"]
+    },
+    {
+      "id": "AIRPAL",
+      "name": "AirPal Air Purifier",
+      "article_number": null,
+      "category": "Air Purifier",
+      "description": "Standalone air purifier for indoor spaces.",
+      "specs": {
+        "airflow_m3h": null,
+        "nfc_configurable": false,
+        "sensor": null,
+        "wrg_efficiency_pct": null,
+        "ex_rating": null
+      },
+      "use_cases": ["Office", "Waiting room", "Classroom", "Restaurant"],
+      "highlights": ["Standalone without installation", "HEPA filtration"]
+    },
+    {
+      "id": "EX-AXIAL",
+      "name": "Explosion-Proof Axial Ventilator",
+      "article_number": null,
+      "category": "Explosion-Proof Ventilator",
+      "description": "ATEX-certified axial ventilator for hazardous areas.",
+      "specs": {
+        "airflow_m3h": null,
+        "protection_class": null,
+        "mounting_type": "Wall/Duct",
+        "nfc_configurable": false,
+        "sensor": null,
+        "wrg_efficiency_pct": null,
+        "ex_rating": "ATEX-certified"
+      },
+      "use_cases": ["Chemical plant", "Paint shop", "Gas station", "Ex-Zone"],
+      "highlights": ["ATEX certification", "Wall and duct installation"]
+    },
+    {
+      "id": "BRANDGAS-AXIAL",
+      "name": "Smoke Extraction Axial Ventilator",
+      "article_number": null,
+      "category": "Smoke Extraction Ventilator",
+      "description": "Axial ventilator for smoke extraction and smoke-free zones, T120-rated.",
+      "specs": {
+        "airflow_m3h": null,
+        "mounting_type": "Wall/Shaft",
+        "nfc_configurable": false,
+        "sensor": null,
+        "wrg_efficiency_pct": null,
+        "ex_rating": null,
+        "fire_rating": "T120"
+      },
+      "use_cases": ["Stairwell", "Underground parking", "Escape route", "Smoke containment"],
+      "highlights": ["T120 fire-rated", "Smoke extraction per DIN standard"]
+    }
+  ]
+}
